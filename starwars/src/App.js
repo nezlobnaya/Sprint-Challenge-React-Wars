@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Card from './components/Card/Card';
 import { makeStyles, createStyles, Theme, Grid, Paper } from '@material-ui/core';
+import Footer from "./components/Footer/Footer";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -66,6 +67,7 @@ const App = () => {
             )}
 
           </Grid>
+          <Footer />
       </div>
     );
 }
