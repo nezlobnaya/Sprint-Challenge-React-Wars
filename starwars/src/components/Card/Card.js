@@ -9,13 +9,10 @@ const useStyles = makeStyles(
             maxWidth: 380,
             minHeight: 360,
             maxHeight: 500,
-            // '&:hover': {
-            //     
-            //  },
-             '&:hover': {
+            '&:hover': {
                 transform: 'translateY(-3px) scale(1.02)',
                 transition: 'all 0.3s',
-                background: "rgb(242, 255, 247)"
+                background: "rgb(245, 227, 201)"
                 }
     
         },

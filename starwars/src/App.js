@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: theme.spacing(5),
             fontSize: '3rem',
             textAlign: 'center',
-            color: 'white',
-            backgroundColor: 'rgb(36, 97, 26)'
+            color: 'rgb(184, 89, 6)',
+            backgroundColor: 'rgb(247, 205, 168)'
         },
     }),
 );
