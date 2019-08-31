@@ -24,15 +24,31 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+    ReactJS is a JS library. It basically says:’ Don’t touch the DOM, I’ll do it. It takes care of DOM changes using virtual DOM!’. It builds web sites like lego blocks with reusable components. It has a one way data flow, which makes it easier to debug code. Also, ReactJS is just a UI, the rest is up to you!It’s like a stove, but everything else: knife, species, , etc. are up to a cook. We are able to move React to other places: iOS, Android, VR apps, desktop apps, etc
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+    It means utilizing and adopting the following steps: 
+    Decide on components/hierarchy with one job per component. Decide on the state and where it lives. What changes occur when state change.And always remember to clean things before leaving (unmount wisely)
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+- [x] Describe state.
+
+    Components data will be stored in component's State. It’s a JS object. This state can be modified based on user action or other action. when a component state is changed React will re-render the component to the browser. state is managed within the component (similar to variables declared within a function).    
+
+- [x] Describe props.
+
+    Props is a JS object too. Unlike state, props get passed to the component (similar to function parameters). props  are a Component's configuration, its options if you may. They are received from above and immutable as far as the Component receiving them is concerned. Props are static while state is dynamic.
+
+- [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    A "side effect" is anything that affects something outside the scope of the function being executed. These can be, say, a network request, which has one’s code communicating with a third party, causing logs to be recorded, caches to be saved or updated, all sorts of effects that are outside the function. The perfect way to sync is to utilize  useEffect. Whenever props change, it will set the state inside useEffect: ``` useEffect(() => {
+    setProfileState(props);
+    }, [props]);```
+
+
 
 ## Project Set Up
 
