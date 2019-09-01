@@ -88,7 +88,7 @@ Your finished project must include all of the following requirements:
 - [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
 - [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
 - [x] Consistent quotation usage.
-- [x] Spell-check.
+- [x] Spell-check. 
 - [x] Schedule time to review, refine and reassess your work.
 
 
@@ -96,7 +96,7 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 
 ## Stretch Problems
 
-- [ ] Add at least one test using a testing tool:
+- [x] Add at least one test using a testing tool:
   - [react-testing-library](https://github.com/testing-library/react-testing-library#basic-example)
   - [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html)
 

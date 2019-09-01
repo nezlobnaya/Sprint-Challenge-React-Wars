@@ -1,5 +1,10 @@
 import React from "react";
-import styled from 'styled-components';
+import styled, { keyframes }  from 'styled-components';
+import { bounce } from 'react-animations';
+
+
+const BouncyDiv = styled.div`animation: 6s ${keyframes`${bounce}`} infinite`;
+
 
 const ColorH2 = styled.h2`
     color: rgb(184, 89, 6);
@@ -19,7 +24,9 @@ const FooterWrapper = styled.div`
 const Footer = () => {
     return (
         <FooterWrapper>
-            <ColorH2>Burlutsky Web Solutions  ©2019</ColorH2>
+            <ColorH2>
+            <BouncyDiv>Burlutsky Web Solutions  ©2019</BouncyDiv>
+            </ColorH2>
         </FooterWrapper>
     );
 };

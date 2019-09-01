@@ -4,6 +4,12 @@ import './App.css';
 import Card from './components/Card/Card';
 import { makeStyles, createStyles, Theme, Grid, Paper } from '@material-ui/core';
 import Footer from "./components/Footer/Footer";
+import styled, { keyframes } from "styled-components";
+import { pulse } from 'react-animations';
+
+const FlashDiv = styled.div`animation: 5s ${keyframes`${pulse}`} infinite`;
+
+
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -46,7 +52,7 @@ const App = () => {
       <div className={classes.root}>
           <Grid container spacing={4} justify="center">
           <Grid item xs={12}>
-          <Paper className={classes.paper}>Star Wars Heroes</Paper>
+          <Paper className={classes.paper}><FlashDiv>Star Wars Heroes</FlashDiv></Paper>
           </Grid>
           
              { heroes.map((hero, index) => { 

@@ -13,8 +13,10 @@ const useStyles = makeStyles(
                 transform: 'translateY(-3px) scale(1.02)',
                 transition: 'all 0.3s',
                 background: "rgb(245, 227, 201)"
-                }
-    
+                },
+            opacity: 0.7,
+            color: 'brown',
+            fontWeight: 'bold',
         },
         media:{
             height: 240,
